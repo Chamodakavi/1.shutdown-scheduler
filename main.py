@@ -6,8 +6,8 @@ import customtkinter
 
 shutdown_scheduled_event = threading.Event()
 shutdown_monitor_thread = None
-countdown_update_job = None  # ⬅️ New: Reference for cancelling countdown
-target_time = None           # ⬅️ Store shutdown time globally
+countdown_update_job = None 
+target_time = None   
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
@@ -21,7 +21,7 @@ def cancel_shutdown():
     if shutdown_scheduled_event.is_set():
         shutdown_scheduled_event.clear()
         app.after(0, lambda: status_label.configure(text="✅ Shutdown cancelled."))
-        app.after(0, lambda: countdown_label.configure(text=""))  # ⬅️ Clear countdown
+        app.after(0, lambda: countdown_label.configure(text=""))
         if countdown_update_job:
             app.after_cancel(countdown_update_job)
         os.system("shutdown /a")
@@ -80,8 +80,7 @@ def update_countdown():
     countdown_label.configure(text=f"⏳ Time remaining: {hours:02}:{minutes:02}:{seconds:02}")
     countdown_update_job = app.after(1000, update_countdown)
 
-# --- GUI SETUP ---
-
+#GUI SETUP
 app = customtkinter.CTk()
 app.title("Shutdown Scheduler")
 app.geometry("300x260")
@@ -130,7 +129,7 @@ status_label = customtkinter.CTkLabel(
 )
 status_label.pack(pady=5)
 
-# ⬇️ NEW: Countdown Label
+#Countdown Label
 countdown_label = customtkinter.CTkLabel(
     app, text="", text_color="orange", font=customtkinter.CTkFont(size=13)
 )
