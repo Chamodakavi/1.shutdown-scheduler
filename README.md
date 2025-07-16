@@ -45,9 +45,9 @@ So I built this tool to **automatically shut down my laptop at a time I choose**
 ### 💻 Option 2: Run from source (Python required)
 1. Clone this repository  
 2. Install dependencies  
-```bash
-pip install customtkinter
 
+
+---
 
 ## 📂 Project Structure
 1.shutdown-scheduler/
@@ -56,13 +56,19 @@ pip install customtkinter
 ├── Setup/                     # Inno Setup script & .exe installer
 └── README.md
 
+---
 
 ## 📥 Download
 👉 Download .exe installer
 
+---
+
 ## 🙌 Contributing
 Pull requests and suggestions are welcome! Feel free to fork this repo and improve it.
+
+---
 
 ## 📬 Contact
 Built with ❤️ by ChamodaKavi
 For any feedback or suggestions, feel free to reach out via GitHub or LinkedIn.
+---
