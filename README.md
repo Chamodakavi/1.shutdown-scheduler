@@ -49,7 +49,7 @@ So I built this tool to **automatically shut down my laptop at a time I choose**
 pip install customtkinter
 
 
-📂 Project Structure
+## 📂 Project Structure
 1.shutdown-scheduler/
 ├── main.py                    # Main Python script
 ├── Assets/                    # Icons and images
@@ -57,12 +57,12 @@ pip install customtkinter
 └── README.md
 
 
-📥 Download
+## 📥 Download
 👉 Download .exe installer
 
-🙌 Contributing
+## 🙌 Contributing
 Pull requests and suggestions are welcome! Feel free to fork this repo and improve it.
 
-📬 Contact
+## 📬 Contact
 Built with ❤️ by ChamodaKavi
 For any feedback or suggestions, feel free to reach out via GitHub or LinkedIn.
