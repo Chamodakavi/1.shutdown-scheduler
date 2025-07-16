@@ -50,11 +50,11 @@ So I built this tool to **automatically shut down my laptop at a time I choose**
 ---
 
 ## 📂 Project Structure
-1.shutdown-scheduler/
+`1.shutdown-scheduler/
 ├── main.py                    # Main Python script
 ├── Assets/                    # Icons and images
 ├── Setup/                     # Inno Setup script & .exe installer
-└── README.md
+└── README.md`
 
 ---
 
@@ -69,6 +69,6 @@ Pull requests and suggestions are welcome! Feel free to fork this repo and impro
 ---
 
 ## 📬 Contact
-Built with ❤️ by ChamodaKavi
+Built by ChamodaKavi
 For any feedback or suggestions, feel free to reach out via GitHub or LinkedIn.
----
+
